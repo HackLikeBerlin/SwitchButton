@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 10rem;
+    height: 4rem;
+    background-color: red;
+    border-radius: 25px;
+    cursor: pointer;
+}
+ 
+.switch::after{
+    content: "";
+    position: absolute;
+    left: 0.3rem;
+    top: 0.3rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + .switch:after{
+    translate: 5.8rem 0;
+    transition: all 0.3s linear;
+    
+}
+input[type="checkbox"]:checked + .switch{
+   background-color: blue;
+   transition: all 0.3s linear;
+}
+input[type="checkbox"]{
+    display: none;
+}

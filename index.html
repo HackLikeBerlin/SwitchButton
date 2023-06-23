@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+
+   <input type="checkbox" name="checkbox" id="checkbox" >
+    <label for="checkbox" class="switch">
+        
+    </label>
+
+    <script>
+        const body = document.querySelector('.container')
+        const button =document.querySelector('.submit')
+        
+        button.addEventListener('click',() =>{
+            body.classList.toggle('change-color')
+        })
+       
+    </script>
+</body>
+</html>
